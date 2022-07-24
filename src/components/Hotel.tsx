@@ -2,12 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppState } from "./AppState";
 import { setHotels } from "./HotelSlice";
-interface IHotel{
-    name : string,
-    cusinee : string,
-    featured_image : string,
-    id: string
-}
+import { IHotel } from "./HotelSlice";
 
 export default function Hotels(){
 const dispatch = useDispatch();
